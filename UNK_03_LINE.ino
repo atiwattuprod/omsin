@@ -1,5 +1,5 @@
 #include <SPI.h>
-#include <Adafruit_MCP3008.h>
+#include <Adafruit_MCP3008.h>///library ver1.0.0
 Adafruit_MCP3008 adc;
 #define NUM_SENSORS 8
 int LastError;
@@ -10,7 +10,7 @@ int F[NUM_SENSORS];
 ///////////////////////////////////////////////////////////////////////////
 int MinValue[NUM_SENSORS] = {45, 46, 47, 47, 49, 45, 46, 53};
 int MaxValue[NUM_SENSORS] = {780, 765, 820, 841, 849, 791, 800, 890};
-
+///change minmax to change black white
 ///////////////////////////////////////////////////////////////////////////
 
 void setup()
